@@ -119,7 +119,7 @@ const Flow = () => {
     } else {
       name = "";
     }
-    let response = await fetch("https://sales-blink-server.vercel.app/api/sequence/save", {
+    let response = await fetch("https://sales-blink-assignment-server.vercel.app/api/sequence/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -147,7 +147,7 @@ const Flow = () => {
     }
     let executionSequence = mainDFS(edgesMap);
     try {
-      let response = await fetch("https://sales-blink-server.vercel.app/api/execution", {
+      let response = await fetch("https://sales-blink-assignment-server.vercel.app/api/execution", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
