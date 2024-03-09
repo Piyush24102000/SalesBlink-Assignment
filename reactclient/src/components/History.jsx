@@ -14,7 +14,7 @@ const History = () => {
     async function fetchAllSequences() {
       try {
         let response = await fetch(
-          `http://localhost:5000/api/sequence/${userId}`
+          `https://sales-blink-server.vercel.app/api/sequence/${userId}`
         );
         let responseData = await response.json();
         setSequenceData(responseData.data);
