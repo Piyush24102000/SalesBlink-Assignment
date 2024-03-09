@@ -10,13 +10,12 @@ const { execRouter } = require('./routes/ExecutionRoutes');
 
 
 /*----- Global Middlewares---- */
-app.use(cors({
-    origin: 'https://sales-blink-assignment-client.vercel.app', // Adjust this to match your frontend's origin
-    credentials: true,
-}));
 app.use(express.json());
 app.use(cookieParser())
-
+app.use(cors({
+    origin: 'http://localhost:3000', // Adjust this to match your frontend's origin
+    credentials: true,
+}));
 
 /* Routes */
 app.use('/api/user', userRouter)
