@@ -10,7 +10,7 @@ const Register = () => {
 
     async function handleSubmit() {
         try {
-            let response = await fetch('http://localhost:5000/api/user/register', {
+            let response = await fetch('https://sales-blink-server.vercel.app/api/user/register', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
