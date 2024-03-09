@@ -29,22 +29,22 @@ const userLogin = async (req, res) => {
         res.cookie('token', token, {
             sameSite: 'none',
             secure: true,
-            path:'/'
+            path:'/',
 
-            // domain: 'sales-blink-assignment-server.vercel.app'
+             domain: 'vercel.app'
         })
         res.cookie('name', checkIfUserExists.name, {
             sameSite: 'none',
             secure: true,
-            path:'/'
+            path:'/',
 
-            // domain: 'sales-blink-assignment-server.vercel.app'
+             domain: 'vercel.app'
         })
         res.cookie('id', checkIfUserExists._id, {
             sameSite: 'none',
             secure: true,
-            path:'/'
-            // domain: 'sales-blink-assignment-server.vercel.app'
+            path:'/',
+             domain: 'vercel.app'
         })
 
         return res.status(200).json({ success: true, message: "User Logged in Successful" })
