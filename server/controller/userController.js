@@ -28,18 +28,18 @@ const userLogin = async (req, res) => {
         let token = jwt.sign({ userId: checkIfUserExists._id, userName: checkIfUserExists.name }, process.env.SECRET, { expiresIn: "24h" })
         res.cookie('token', token, {
             sameSite: 'none',
-            secure: true,
-            domain: 'sales-blink-server.vercel.app'
+            // secure: true,
+            // domain: 'sales-blink-server.vercel.app'
         })
         res.cookie('name', checkIfUserExists.name, {
             sameSite: 'none',
-            secure: true,
-            domain: 'sales-blink-server.vercel.app'
+            // secure: true,
+            // domain: 'sales-blink-server.vercel.app'
         })
         res.cookie('id', checkIfUserExists._id, {
             sameSite: 'none',
-            secure: true,
-            domain: 'sales-blink-server.vercel.app'
+            // secure: true,
+            // domain: 'sales-blink-server.vercel.app'
         })
 
         return res.status(200).json({ success: true, message: "User Logged in Successful" })
