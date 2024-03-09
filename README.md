@@ -21,6 +21,42 @@
 -  Used Cookies for authentication storing tokens and data
 
 ## Screenshots
+- HomePage
+  
+![Home Page](/Pics/Homepage.png)
+
+- Conditional Login
+
+![Conditional Login Page](/Pics/ConditionalLogin.png)
+
+- Login
+
+![Login Page](/Pics/Login.png)
+
+- Register
+
+![Register Page](/Pics/Register.png)
+
+- Canvas Page
+
+![Canvas Page](/Pics/CanvasPage.png)
+
+- Dragged Nodes
+
+![Dragged Page](/Pics/Dragged.png)
+
+- Sequence History List
+
+![Sequence History List](/Pics/SequenceHistory.png)
+
+- Edit Email
+
+![Edit email Page](/Pics/EditEmail.png)
+
+- Edit Wait
+
+![Edit wait Page](/Pics/EditWait.png)
+
 
 
 ## API Documentation
