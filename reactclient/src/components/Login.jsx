@@ -8,7 +8,7 @@ const Login = () => {
   let [password, setPassword] = useState("");
   async function handleSubmit() {
     try {
-      let response = await fetch("http://localhost:5000/api/user/login", {
+      let response = await fetch("https://sales-blink-server.vercel.app/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
