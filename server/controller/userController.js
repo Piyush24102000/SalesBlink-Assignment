@@ -26,9 +26,18 @@ const userLogin = async (req, res) => {
 
         /* Generate JWT if user credentials are correct */
         let token = jwt.sign({ userId: checkIfUserExists._id, userName: checkIfUserExists.name }, process.env.SECRET, { expiresIn: "24h" })
-        res.cookie('token', token)
-        res.cookie('name', checkIfUserExists.name)
-        res.cookie('id', checkIfUserExists._id)
+        res.cookie('token', token, {
+            sameSite: 'none',
+            secure: true
+        })
+        res.cookie('name', checkIfUserExists.name, {
+            sameSite: 'none',
+            secure: true
+        })
+        res.cookie('id', checkIfUserExists._id, {
+            sameSite: 'none',
+            secure: true
+        })
 
         return res.status(200).json({ success: true, message: "User Logged in Successful" })
 
