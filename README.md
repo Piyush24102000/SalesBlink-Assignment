@@ -13,7 +13,7 @@
  - Used React-flow library and TailwindCSS
  - Implemented drag and drop node feature
  - Conditional rendering and toasts notifications
- - Save, Create and Retreive sequence History feature
+ - Save, Create and Retreive sequence History feature , Zustand Store included
  - Indivial nodes editing feature
  - Execution Engine with Nodemailer library for sending Mails
  - Password storing using Bcrypt library
