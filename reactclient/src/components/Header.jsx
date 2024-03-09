@@ -10,6 +10,7 @@ const Header = () => {
     const checkAuth = () => {
       setUserName(Cookies.get("name"));
       setToken(Cookies.get("token"));
+      console.log(token,userName)
     };
     checkAuth();
 
